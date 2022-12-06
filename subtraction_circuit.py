@@ -1,5 +1,5 @@
 from circuit_part import Circuit_part
-from gabes import wire
+from gabes2 import wire
 from label_holder import Label_holder
 
 class Subtraction_circuit(Circuit_part):

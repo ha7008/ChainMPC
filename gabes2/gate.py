@@ -9,8 +9,8 @@ import pickle
 import gabes.settings as settings
 import hashlib
 
-from gabes.wire import Wire
-from gabes.label import Label
+from gabes2.wire import Wire
+from gabes2.label import Label
 from gabes.utils import get_last_bit, xor, adjust_wire_offset
 from gabes.crypto import AESKey, generate_zero_ciphertext
 from cryptography.fernet import Fernet, InvalidToken

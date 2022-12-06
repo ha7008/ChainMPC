@@ -29,8 +29,11 @@ class Label(object):
             b'eYzEQ5mcHSajUttCznAtxelSPcHYrnF94GOA2GesX5Y='
     """
 
-    def __init__(self, represents, pp_bit=None):
-        self.label = os.urandom(settings.NUM_BYTES)
+    def __init__(self, represents, pp_bit=None, bytes = None):
+        if bytes:
+            self.label = bytes
+        else:
+            self.label = os.urandom(settings.NUM_BYTES)
         self.represents = represents
         self.pp_bit = pp_bit
 
