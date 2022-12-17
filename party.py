@@ -165,7 +165,7 @@ class Evaluator_party(Party):
     def evaluate_circuit(self):
         self._recreate_Z_labels()
         self._assemble_labels()
-        self.result = self.circuit.ungarble(self.all_labels)
+        self.result = 1 if self.circuit.ungarble(self.all_labels).represents else 0
 
     def _recreate_Z_labels(self):
         for zi in self.label_shares:
